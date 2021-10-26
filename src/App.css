@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 800px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+.search-container .row {
+  display: flex;
+  margin-left: -10px;
+  margin-right: -10px;
+  width: 100%;
+}
+
+.search-container input {
+  background-color: rgb(240, 240, 240);
+  border-radius: 3px;
+  border: 1px solid rgb(222, 226, 230);
+  box-shadow: none;
+  flex: 0 0 calc(33.33% - 14px);
+  margin: 0 10px;
+  padding: 7px 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 2px;
+  border-style: hidden;
+  box-shadow: 0 0 0 1px rgb(222, 226, 230);
+  color: rgb(33, 37, 41);
+}
+
+thead th {
+  background-color: rgb(238, 238, 238);
+  border: 1px solid rgb(222, 226, 230);
+  font-size: .9rem;
+  padding: 5px 10px;
+}
+
+tbody td {
+  border: 1px solid rgb(222, 226, 230);
+  font-size: .875rem;
+  padding: 7px 10px;
+}
+
+tbody tr:nth-child(2n + 2) td {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.active,
+.inactive {
+  border-radius: 50%;
+  display: inline-block;
+  height: 10px;
+  margin-right: 10px;
+  width: 10px;
+}
+
+.active {
+  background-color: rgb(33, 171, 84);
+}
+
+.inactive {
+  background-color: rgb(171, 33, 33);
+}
