@@ -34,18 +34,15 @@ function App() {
         return campaign;
       })]);
     };
-    
-    if (!window.AddCampaigns) {
-      console.log('%c[AddCampaigns method exposed for demo test purpose]', 'color:red;font-size:1rem');
-    }
 
     window.AddCampaigns = addCampaigns;
 
+    console.log('%c[AddCampaigns method exposed for demo test purpose]', 'color:red;font-size:1rem');
+
     return function() {
-      console.log('[cleared]');
       delete window.AddCampaigns;
     };
-  });
+  }, [campaigns]);
 
   return (
     <div className="container">
